@@ -17,8 +17,8 @@ describe('GET /characters', function() {
     },
     {
         name: 'Logan',
-        alias: 'wolverine',
-        team: ['x-men'],
+        alias: 'Wolverine',
+        team: ['X-men'],
         active: true
     }
     ]
@@ -38,10 +38,13 @@ describe('GET /characters', function() {
             })
     })
 
-    it('deve poder buscar personagem por nome', function() {
+    it.only('deve poder buscar personagem por nome', function() {
         cy.searchCharacters('Logan').then(function(response){
             expect(response.status).to.equal(200)
             expect(response.body.length).to.equal(1)
+            expect(response.body[0].name).to.equal('Logan')
+            expect(response.body[0].alias).to.equal('Wolverine')
+            expect(response.body[0].active).to.equal(true)
         })
     })
 })
