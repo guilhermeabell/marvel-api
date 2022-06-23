@@ -24,8 +24,9 @@ describe('GET /characters', function() {
     ]
 
     before(function(){
-        cy.setToken()
         cy.back2ThePast()
+        cy.setToken()
+        cy.populateCharacters(characters)
     })
 
     it('deve retornar uma lista de personagens', function() {
