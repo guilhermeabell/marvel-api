@@ -1,0 +1,28 @@
+{
+  "name": "vdt-season1-marvel-api",
+  "version": "1.0.0",
+  "description": "Projeto de automação na API da Marvel durante a 1a temporada do Viver de Teste",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matherson20/vdt-season1-marvel-api.git"
+  },
+  "keywords": [
+    "javascrtipt",
+    "nodejs",
+    "javascript"
+  ],
+  "author": "Matherson Antonio",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/matherson20/vdt-season1-marvel-api/issues"
+  },
+  "homepage": "https://github.com/matherson20/vdt-season1-marvel-api#readme",
+  "devDependencies": {
+    "@bahmutov/cy-api": "^2.1.3",
+    "cypress": "^9.6.0"
+  }
+}
