@@ -28,8 +28,8 @@
 
 ### Remover Personagem
 
-- [ ] Deve poder remover por id, um personagem cadastrado
-- [ ] Deve retornar não encontrado ao remover por id não cadastrado
+- [x] Deve poder remover por id, um personagem cadastrado
+- [x] Deve retornar não encontrado ao remover por id não cadastrado
 
 ## 🚀 Tecnologias
 
