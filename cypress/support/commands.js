@@ -86,8 +86,8 @@ Cypress.Commands.add('getCharacters', function(payload){
 })
 
 Cypress.Commands.add('populateCharacters', function(characters) {
-    cy.postCharacter(characters[0])
-    cy.postCharacter(characters[1])
-    cy.postCharacter(characters[2])
+    characters.forEach(function(c) {
+        cy.postCharacter(c)
+    })
 
 })
