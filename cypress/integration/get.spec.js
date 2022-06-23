@@ -37,5 +37,12 @@ describe('GET /characters', function() {
 
             })
     })
+
+    it('deve poder buscar personagem por nome', function() {
+        cy.searchCharacters('Logan').then(function(response){
+            expect(response.status).to.equal(200)
+            expect(response.body.length).to.equal(1)
+        })
+    })
 })
 

@@ -71,10 +71,26 @@ Cypress.Commands.add('postCharacter', function(payload){
 
 
 //GET /CHARACTERES requisicao que testa a obtencao de personagens 
-Cypress.Commands.add('getCharacters', function(payload){
+Cypress.Commands.add('getCharacters', function(){
     cy.api({
         method: 'GET',
         url: '/characters',
+        headers: {
+            Authorization: Cypress.env('token')
+        },
+        failOnStatusCode: false
+    }).then(function(response){
+        return response
+       
+})
+})
+
+
+Cypress.Commands.add('searchCharacters', function(characterName){
+    cy.api({
+        method: 'GET',
+        url: '/characters',
+        qs: {name: characterName},
         headers: {
             Authorization: Cypress.env('token')
         },
