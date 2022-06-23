@@ -28,7 +28,6 @@ describe('POST /characters', function(){
     })
 
 
-
     context('quando o personagem já existe', function(){
 
         const character ={
