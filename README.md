@@ -21,10 +21,10 @@
 
 ### Busca de Personagens
 
-- [ ] Deve retornar uma lista de personagens cadastrados
-- [ ] Deve poder buscar por personagem por nome
-- [ ] Deve poder buscar personagem pelo id
-- [ ] Deve retornar 404 ao buscar por id não cadastrado
+- [x] Deve retornar uma lista de personagens cadastrados
+- [x] Deve poder buscar por personagem por nome
+- [x] Deve poder buscar personagem pelo id
+- [x] Deve retornar 404 ao buscar por id não cadastrado
 
 ### Remover Personagem
 
